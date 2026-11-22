@@ -102,7 +102,7 @@ h2{margin:0 0 10px;font-weight:800}
 .m.done .t b{text-decoration:line-through}
 .spoil .t b{color:var(--orange)}
 body.hide-names .m:not(.spoil) .t{filter:blur(6px)}
-body.hide-names .m:not(.spoil) label:hover .t{filter:none}
+body.hide-names .m:not(.spoil) label:hover .t,body.hide-names .m:not(.spoil) label:focus-within .t{filter:none}
 
 .pager{display:flex;justify-content:space-between;gap:10px;margin-top:20px}
 .pager a{text-decoration:none;font-weight:800;background:var(--card);border:1px solid var(--line);padding:12px 18px;border-radius:999px}
