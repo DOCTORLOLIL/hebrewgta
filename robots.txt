@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hebrewgta.bulu.lol/sitemap.xml
