@@ -38,3 +38,5 @@ g.querySelectorAll('.safe').forEach(function(c){var ok=(!v||c.dataset.s.indexOf(
 g.style.display=(f==='all'||f===g.dataset.g)&&show?'':'none'})}
 q.addEventListener('input',run);document.querySelectorAll('.chip').forEach(function(b){b.addEventListener('click',function(){
 document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on')});b.classList.add('on');f=b.dataset.f;run()})})})();
+(function(){var b=document.querySelector('.openall');if(!b)return;var open=false;
+b.addEventListener('click',function(){open=!open;document.querySelectorAll('.m details').forEach(function(d){d.open=open});b.textContent=open?'סגרו הכל':'פתחו הכל'})})();

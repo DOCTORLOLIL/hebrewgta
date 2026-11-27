@@ -159,3 +159,24 @@ body.hide-names .m:not(.spoil) label:hover .t,body.hide-names .m:not(.spoil) lab
 @media (max-width:560px){.ta{display:none}.stable th:nth-child(3){display:none}}
 .safe.flash{box-shadow:0 0 0 3px var(--pink)}
 [hidden]{display:none!important}
+
+/* missions v2: expandable details */
+.m{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-radius:14px;background:var(--bg2);border:1px solid transparent}
+.m:hover{border-color:var(--line)}
+.m>input{margin-top:10px}
+.m details{flex:1;min-width:0}
+.m summary{list-style:none;display:flex;align-items:center;gap:10px;cursor:pointer;padding:4px 0}
+.m summary::-webkit-details-marker{display:none}
+.m summary:focus-visible{outline:2px solid var(--pink);border-radius:8px}
+.bds{margin-right:auto;display:flex;gap:2px;font-style:normal}
+.bd{font-style:normal;font-size:14px}
+.chev{color:var(--muted);transition:transform .2s;font-size:14px}
+.m details[open] .chev{transform:rotate(180deg)}
+.md{padding:8px 4px 6px;border-top:1px dashed var(--line);margin-top:8px;font-size:15px}
+.md p{margin:6px 0}
+.mtip{background:rgba(255,154,60,.08);border-right:3px solid var(--orange);padding:6px 10px;border-radius:8px}
+.mrew{background:rgba(0,214,195,.08);border-right:3px solid var(--teal);padding:6px 10px;border-radius:8px}
+.legend{font-size:13px;color:var(--muted);margin:0 0 12px}
+.openall{font-family:inherit;font-size:12px;font-weight:700;background:var(--bg2);color:var(--text);border:1px solid var(--line);border-radius:999px;padding:3px 10px;cursor:pointer;margin-right:6px}
+body.hide-names .m:not(.spoil) .md{filter:blur(6px)}
+body.hide-names .m:not(.spoil) details[open] .t,body.hide-names .m:not(.spoil) details[open] .md{filter:none}
